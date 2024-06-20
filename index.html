@@ -42,17 +42,10 @@
           src="./public/agriwe-transparent-1@2x.png"
         />
 
-        <div class="frame-wrapper">
-          <div class="home-contact-link-parent">
-            <div class="home-contact-link">
-              <div class="home" id="homeText3">Home</div>
-            </div>
-            <div class="home-contact-link1">
-              <div class="contact-us">Contact us</div>
-            </div>
-            <button class="button">
-              <div class="button1">Button</div>
-            </button>
+        <div class="home-contact-link">
+          <div class="home-parent">
+            <div class="home" id="homeText">Home</div>
+            <div class="contact-us" id="contactUsText">Contact us</div>
           </div>
         </div>
       </header>
@@ -60,8 +53,8 @@
         <div class="items">
           <div class="home1">Home</div>
           <div class="contact-us1">Contact us</div>
-          <div class="button2">
-            <div class="button3">Button</div>
+          <div class="button">
+            <div class="button1">Button</div>
           </div>
         </div>
         <div class="agri-we">Site name</div>
@@ -124,8 +117,8 @@
           <div class="page9">Page</div>
           <div class="home2">Home</div>
           <div class="contact-us2">Contact us</div>
-          <div class="button4">
-            <div class="button5">Button</div>
+          <div class="button2">
+            <div class="button3">Button</div>
           </div>
         </div>
         <div class="agree-we">Agree-we</div>
@@ -138,10 +131,10 @@
       <div class="navigation2">
         <div class="items5">
           <div class="page10">Page</div>
-          <div class="home3" id="homeText2">Home</div>
+          <div class="home3" id="homeText3">Home</div>
           <div class="contact-us3">Contact us</div>
-          <div class="button6">
-            <div class="button7">Button</div>
+          <div class="button4">
+            <div class="button5">Button</div>
           </div>
         </div>
         <div class="agree-we1">Agree-we</div>
@@ -152,10 +145,13 @@
         />
       </div>
       <div class="page11">Page</div>
+      <div class="button6">
+        <div class="button7">Button</div>
+      </div>
       <div class="agree-we2">Agree-we</div>
       <section class="container-wrapper">
         <div class="container">
-          <div class="inner-container">
+          <div class="home-contact-link1">
             <div class="see-detail-link">
               <h1 class="agri-we2">AGRI-WE</h1>
               <div class="growing-futures-nurturing">
@@ -193,7 +189,7 @@
                   <li>Feature</li>
                 </ul>
               </div>
-              <button class="button8" id="button1">
+              <button class="button8" id="button">
                 <div class="select">Select</div>
               </button>
             </div>
@@ -237,7 +233,7 @@
                   </ul>
                 </div>
               </div>
-              <button class="button9" id="button2">
+              <button class="button9" id="button1">
                 <div class="select1">Select</div>
               </button>
             </div>
@@ -252,7 +248,7 @@
               <div class="header1">
                 <div class="plan-3-name">Plan 3 name</div>
                 <div class="price1">
-                  <h2 class="agree-we-chatbot">Agree-we Chatbot</h2>
+                  <div class="agri-we-chatbot">Agri-we Chatbot</div>
                   <div class="per-month2">per month</div>
                 </div>
               </div>
@@ -276,7 +272,7 @@
                   </ul>
                 </div>
               </div>
-              <button class="button10">
+              <button class="button10" id="button2">
                 <div class="select2">Select</div>
               </button>
             </div>
@@ -286,6 +282,20 @@
     </div>
 
     <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "s-t-p-a-g-e.html";
+        });
+      }
+
+      var contactUsText = document.getElementById("contactUsText");
+      if (contactUsText) {
+        contactUsText.addEventListener("click", function (e) {
+          // Please sync "contact us" to the project
+        });
+      }
+
       var homeText3 = document.getElementById("homeText3");
       if (homeText3) {
         homeText3.addEventListener("click", function (e) {
@@ -293,24 +303,24 @@
         });
       }
 
-      var homeText2 = document.getElementById("homeText2");
-      if (homeText2) {
-        homeText2.addEventListener("click", function (e) {
-          window.location.href = "s-t-p-a-g-e.html";
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./crop-prediction.html";
         });
       }
 
       var button1 = document.getElementById("button1");
       if (button1) {
         button1.addEventListener("click", function (e) {
-          // Please sync "crop prediction " to the project
+          window.location.href = "./fertilizer-recc.html";
         });
       }
 
       var button2 = document.getElementById("button2");
       if (button2) {
         button2.addEventListener("click", function (e) {
-          // Please sync "fertilizer recc" to the project
+          // Please sync "coming soon" to the project
         });
       }
     </script>
